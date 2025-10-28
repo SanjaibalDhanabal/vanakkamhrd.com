@@ -1,0 +1,11 @@
+CREATE TABLE registrations_2025_hr (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    contact VARCHAR(20) NOT NULL,
+    company VARCHAR(255) NOT NULL,
+    designation VARCHAR(255) NOT NULL,
+    options VARCHAR(255) NOT NULL,
+    photo VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
